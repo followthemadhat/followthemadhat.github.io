@@ -1,0 +1,406 @@
+/* Import SASS Files */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+/* Put All Variables Here */
+/* Put All Fonts Here */
+section {
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+  border-bottom: 1px solid #dde2e6;
+  background-color: #eef2f5; }
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px; }
+
+.main-logo {
+  float: left;
+  margin-top: 20px; }
+  .main-logo:hover {
+    -webkit-transition: 1s ease all;
+    transition: 1s ease all;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg); }
+
+.main-navigation {
+  float: right;
+  margin-top: 30px;
+  height: 130px; }
+  .main-navigation li {
+    display: inline-block;
+    margin-left: 50px; }
+    .main-navigation li a {
+      color: #808591;
+      text-decoration: none; }
+      .main-navigation li a:hover {
+        color: #2ba6e9; }
+
+.main-header {
+  width: 100%; }
+
+.status {
+  margin-top: 150px;
+  text-align: center;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .status:last-child {
+    margin-right: 0; }
+
+.status-text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 360px; }
+  .status-text p {
+    color: #808591; }
+
+.phone {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .phone:last-child {
+    margin-right: 0; }
+
+.phone-image {
+  position: relative;
+  display: block;
+  float: right;
+  width: 295px;
+  height: 603px;
+  background-image: url(../img/phone.png);
+  background-position: top;
+  background-size: 295px;
+  background-repeat: no-repeat; }
+
+.phone-inner-image {
+  position: absolute;
+  top: 61px;
+  left: 12px;
+  width: 272px;
+  height: 483px;
+  border: 1px solid #D2D7DB;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-image: url(../img/multi6.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+h2 {
+  color: #5e626b;
+  font-weight: 400;
+  line-height: 35px; }
+
+p {
+  margin: 0;
+  color: #5e626b;
+  line-height: 24px; }
+
+.status-email {
+  padding: 15px;
+  padding-right: 45px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #ffffff; }
+
+.email {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 240px;
+  height: 46px; }
+
+.email-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: block;
+  width: 34px;
+  height: 34px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(182, 116, 241, 0.2);
+  background-image: url(../img/icon-send-purple.png);
+  background-position: center;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  cursor: pointer; }
+  .email-button:active {
+    background-color: #b500ff; }
+
+.section-heading {
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center; }
+  .section-heading h2 {
+    color: #515c71; }
+
+.section-text {
+  margin: 0 auto;
+  width: 360px;
+  height: 96px;
+  text-align: center; }
+  .section-text p {
+    color: #808591;
+    line-height: 24px; }
+
+.section-blocks {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 1160px; }
+
+.block {
+  display: inline-block;
+  margin-right: 3%;
+  padding: 50px;
+  min-height: 280px;
+  width: 31%;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  background-color: #fff;
+  vertical-align: top; }
+  .block:last-child {
+    margin-right: 0; }
+  .block h3 {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    color: #515c71;
+    font-weight: normal;
+    font-size: 17px; }
+  .block p {
+    margin-top: 10px;
+    color: #808591;
+    font-size: 14px;
+    line-height: 24px; }
+
+.block1-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon-key.png); }
+
+.block2-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon-wand.png); }
+
+.block3-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon-stablecoin.png); }
+
+.section-white {
+  background-color: #fff; }
+
+.section-wrapper {
+  margin: 0 auto;
+  width: 1160px; }
+
+.section-text-column {
+  display: block;
+  float: right;
+  margin-top: -80px;
+  min-height: 200px;
+  max-width: 31%;
+  text-align: center; }
+  .section-text-column h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #515c71;
+    font-size: 24px;
+    line-height: 35px; }
+  .section-text-column p {
+    color: #808591;
+    font-size: 14px;
+    line-height: 24px; }
+
+.block-blue {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  min-height: 228px;
+  width: 31%;
+  background-color: rgba(112, 153, 230, 0.2); }
+  .block-blue h4 {
+    color: #586377;
+    font-weight: 500;
+    font-size: 13px; }
+  .block-blue p {
+    color: #515c71;
+    opacity: .6; }
+
+.block-blue-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon-eye.png); }
+
+.block-purple {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  min-height: 228px;
+  width: 31%;
+  background-color: rgba(161, 135, 213, 0.2); }
+  .block-purple h4 {
+    color: #706584;
+    font-weight: 500;
+    font-size: 13px; }
+  .block-purple p {
+    color: #4f4564;
+    line-height: 24px;
+    opacity: .6; }
+
+.block-purple-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon-decentralized.png); }
+
+.block-green {
+  min-height: 228px;
+  width: 31%;
+  background-color: rgba(95, 196, 141, 0.2); }
+  .block-green h4 {
+    color: #586377;
+    font-weight: 500;
+    font-size: 13px; }
+  .block-green p {
+    color: #395144;
+    line-height: 24px;
+    opacity: .6; }
+
+.block-green-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon-lock-green.png); }
+
+.block-peach {
+  min-height: 228px;
+  width: 31%;
+  background-color: #fae6e4; }
+  .block-peach h4 {
+    color: #715856;
+    font-weight: 500;
+    font-size: 13px; }
+  .block-peach p {
+    color: #684441;
+    line-height: 24px;
+    opacity: .6; }
+
+.block-peach-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon-etherium.png); }
+
+/* Import Libs SASS/CSS */
+/* General Project Styles */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  position: relative;
+  display: block;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+*:focus {
+  outline: none; }
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+.hidden {
+  display: none; }
+
+.hr-clear {
+  clear: both;
+  padding: 15px 0;
+  border: 0; }
+
+.no-borders {
+  border: 0; }
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {
+  color: #666; }
+
+body input:required:valid, body textarea:required:valid {
+  color: #666; }
+
+/* Custom Styles Here */
+/* ALWAYS END */
+/*==========  Desktop First Method  ========== */
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices */
+  .animated {
+    -webkit-transition-property: none !important;
+    /*CSS transitions */
+    transition-property: none !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    /*CSS transforms */
+    transform: none !important;
+    /*CSS animations */
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ========== */
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
