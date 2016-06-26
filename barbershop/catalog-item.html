@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Набор для путешествий «Baxter of California» - Барбершоп «Бородинский»</title>
+    <!-- <base href="/barbershop/"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page catalog-item-page">
+    <header class="main-header">
+        <div class="container clearfix">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="price.html">Прайс-лист</a>
+                    </li>
+                    <li>
+                        <a class="active" href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav><!-- header-navigation -->
+
+            <div class="user-block">
+                <a class="login" href="#" onclick="event.preventDefault();document.getElementById('login-form').classList.toggle('hidden');">Вход</a>
+            </div><!-- user-block -->
+        </div><!-- container -->
+    </header><!-- main-header -->
+
+
+    <div class="container main-container">
+        <header class="content-header">
+            <h1>Набор для путешествий «Baxter of California»</h1>
+
+            <nav class="breadcrumbs">
+                <a class="breadcrumbs-item" href="index.html">Главная</a>
+                <a class="breadcrumbs-item" href="catalog.html">Магазин</a>
+                <a class="breadcrumbs-item" href="catalog.html">Средства для ухода</a>
+                <span class="breadcrumbs-item">Набор для путешествий «Baxter of California»</span>
+            </nav><!-- breadcrumbs -->
+        </header><!-- content-header -->
+
+        <div class="content-container clearfix">
+            <figure class="item-gallery">
+                <a class="main-photo" href="#">
+                    <img src="img/tmp/goods/0001-01.jpg"  width="460"  height="498" alt="Набор для путешествий «Baxter of California»">
+                </a>
+
+                <nav class="gallery-navigation">
+                    <a href="#">
+                        <img src="img/tmp/goods/0001-s-01.jpg"  width="140"  height="149" alt="Набор для путешествий «Baxter of California»">
+                    </a>
+                    <a href="#">
+                        <img src="img/tmp/goods/0001-s-02.jpg"  width="140"  height="149" alt="Набор для путешествий «Baxter of California»">
+                    </a>
+                    <a href="#">
+                        <img src="img/tmp/goods/0001-s-03.jpg"  width="140"  height="149" alt="Набор для путешествий «Baxter of California»">
+                    </a>
+                </nav><!-- gallery-navigation -->
+            </figure><!-- item-gallery -->
+
+            <section class="item-description">
+                <header class="description-header clearfix">
+                    Есть в наличии
+                    <span class="item-sku">Актикул: dexter-ae</span>
+                </header>
+
+                <p class="description-text">
+                    Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+                </p>
+
+                <div class="item-action" >
+                    <span class="item-price">2 900 РУБ.</span>
+                    <a class="btn btn-to-cart" href="#">Купить</a>
+                </div>
+
+                <div class="item-components">
+                    <div  class="components-title">В набор входят:</div>
+                    <ul class="list">
+                        <li>Средство для умывания (50 мл)</li>
+                        <li>Увлажняющий крем (50 мл)</li>
+                        <li>Крем для бритья (50 мл)</li>
+                        <li>Крем после бритья, шампунь (50 мл)</li>
+                        <li>Удобная кожаная косметичка</li>
+                    </ul>
+                </div><!-- item-components -->
+            </section><!-- item-description -->
+        </div><!-- content-container -->
+    </div><!-- main-container -->
+
+
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <div class="footer-contacts">
+                Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                <a href="#">Как нас найти?</a><br>
+                телефон: +7 (495) 666-02-66
+            </div><!-- footer-contacts -->
+
+            <div class="footer-social">
+                <p>Давайте дружить!</p>
+                <a class="social-btn social-btn-vk" href="#">Vk</a>
+                <a class="social-btn social-btn-fb" href="#">Fb</a>
+                <a class="social-btn social-btn-inst" href="#">Inst</a>
+            </div><!-- footer-social -->
+
+            <div class="footer-copyright">
+                <p>Разработано:</p>
+                <a href="#" class="btn">htmlacademy.ru</a>
+            </div><!-- footer-copyright -->
+        </div><!-- container -->
+    </footer><!-- main-footer -->
+
+
+    <section class="popup popup-login hidden" id="login-form">
+        <form action="/login" method="post">
+            <h2>Личный кабинет</h2>
+
+            <p>
+                Введите пожалуйста свой логин и пароль<br>
+                Если вы забыли пароль
+            </p>
+
+            <input class="login-input login-input-user" type="text" name="login" placeholder="Логин">
+            <input class="login-input login-input-pass" type="password" name="password" placeholder="Пароль">
+
+            <div class="login-options clearfix">
+                <input class="control control-check" id="remember" type="checkbox" name="remember" checked>
+                <label class="login-label" for="remember">Запомните меня</label>
+
+                <a href="#">Я забыл пароль!</a>
+            </div>
+
+            <button class="btn" type="submit">Войти</button>
+        </form>
+
+        <button class="btn-popup-close" onclick="document.getElementById('login-form').classList.toggle('hidden');">Закрыть</button>
+    </section><!-- login-form -->
+</body>
+</html>

@@ -1,0 +1,1178 @@
+/**
+ *  ============================================================================
+ *       Cлужебные правила
+ *  ============================================================================
+**/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("PT Sans Narrow Bold"),
+    local("PTSans-NarrowBold"),
+    url(https://fonts.gstatic.com/s/ptsansnarrow/v7/Q_pTky3Sc3ubRibGToTAYjk68aQDH8VU_fImx7qKQ4U.woff2) format("woff2"),
+    url(https://fonts.gstatic.com/s/ptsansnarrow/v7/Q_pTky3Sc3ubRibGToTAYoIuOJkwW-xE5TF3Op9mRXE.woff) format("woff");
+}
+
+
+/**
+ *  ============================================================================
+ *       Сетка
+ *  ============================================================================
+**/
+
+/*  Центрирование сайта и установка фиксированной ширины
+------------------------------------------------------------------------------*/
+body {
+    min-width: 960px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/*  раскладка шапки сайта
+------------------------------------------------------------------------------*/
+.main-header {
+    margin-bottom: 55px;
+}
+
+.main-navigation {
+    float: left;
+    width: 780px;
+}
+
+.user-block {
+    float: right;
+    max-width: 140px;
+}
+
+
+/*  раскладка подвала сайта
+------------------------------------------------------------------------------*/
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 80px;
+}
+
+.footer-social {
+    float: left;
+}
+
+.footer-copyright {
+    float: right;
+    max-width: 320px;
+}
+
+
+/*  раскладка страницы index.html
+------------------------------------------------------------------------------*/
+.main-container {
+    margin-bottom: 64px;
+}
+
+/* блок логотипа */
+.logo,
+.logo img {
+    width: 368px;
+    height: 204px;
+}
+.logo {
+    margin: 0 auto;
+    margin-bottom: 23px;
+}
+
+/* блок преимуществ (3 колонки) */
+.features-row {
+    margin-bottom: 68px;
+}
+
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+.features-item:last-child {
+    margin-right: 0;
+}
+
+/* двухколоночные блоки */
+.index-content {
+    margin-bottom: 35px;
+}
+
+.content-column-left {
+    float: left;
+    width: 350px;
+}
+.content-column-right {
+    float: right;
+    width: 300px;
+}
+
+
+/*  раскладка для страниц catalog.html
+------------------------------------------------------------------------------*/
+.catalog-page .main-container {
+    margin-bottom: 45px;
+}
+
+.catalog-sidebar {
+    float: left;
+    width: 220px;
+}
+
+.catalog-main {
+    float: right;
+    width: 700px;
+}
+
+
+/* раскладка для страниц catalog-item.html
+------------------------------------------------------------------------------*/
+.catalog-item-page .main-container {
+    margin-bottom: 30px;
+}
+
+.item-gallery {
+    float: left;
+    width: 480px;
+    margin: 0;
+}
+
+.item-description {
+    float: right;
+    width: 376px;
+    padding: 27px 12px;
+}
+
+
+/*  раскладка для страницы price.html
+------------------------------------------------------------------------------*/
+.price-page .main-container {
+    margin-bottom: 80px;
+}
+
+.container-row {
+    margin-bottom: 46px;
+}
+
+.column-left {
+    float: left;
+    width: 400px;
+    margin-right: 80px;
+}
+.column-left:last-child {
+    margin-right: 0;
+}
+
+.column-right {
+    float: right;
+    width: 460px;
+}
+
+
+
+/**
+ *  ============================================================================
+ *       Оформление и декорирование
+ *  ============================================================================
+**/
+
+body {
+    font-size: 14px;
+    line-height: 24px;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background: #111 url("../img/bg-body.jpg") no-repeat 50% 0;
+}
+
+body.inner-page {
+    color: #000;
+    background: #f8f5f2 url("../img/bg-index-pattern.png") repeat 0 0;
+}
+
+
+/*  стилизация элементов форм
+------------------------------------------------------------------------------*/
+input {
+    padding: 8px 15px;
+    border: 2px solid #000;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+
+    text-transform: uppercase;
+    outline: none;
+
+    color: #000;
+    background: #f9f6f3;
+}
+
+input:focus {
+    border-color: #663d15;
+}
+
+/*
+    <input class="control control-check" id="ctrl42" type="checkbox" name="choice" value="42" checked>
+    <label for="ctrl42">Ultimate Answer</label>
+*/
+.control {
+    display: none;
+}
+
+.control + label {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 43px;
+
+    line-height: 20px;
+
+    cursor: pointer;
+}
+
+.control + label:hover {
+    color: #663d15;
+}
+
+.control:disabled + label {
+    cursor: default;
+    opacity: .3;
+}
+
+.control:disabled + label:hover {
+    color: #000;
+}
+
+.control + label::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 1px;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #000;
+}
+
+.control-radio + label::before {
+    border-radius: 50%;
+}
+
+.control-check:checked + label::before {
+    background:
+        radial-gradient(transparent 8px, #fff 8px),
+        linear-gradient(45deg, transparent 45%, #000 45%, #000 55%, transparent 55%),
+        linear-gradient(135deg, #fff 45%, #000 45%, #000 55%, #fff 55%);
+}
+
+.control-radio:checked + label::before {
+    background: radial-gradient(#000 4px, #fff 5px);
+}
+
+
+/*  стилизация списков
+------------------------------------------------------------------------------*/
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    position: relative;
+
+    margin: 0;
+    padding-left: 20px;
+}
+
+.list-big li {
+    margin-bottom: 13px;
+}
+
+.list li::before {
+    content: "";
+
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    margin-top: -2px;
+
+    border: 4px solid #000;
+
+    transform-origin: right bottom;
+    transform: rotate(45deg);
+}
+
+
+/*  стилизация таблиц
+------------------------------------------------------------------------------*/
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 7px 18px;
+    padding-bottom: 8px;
+    border: 2px solid #000;
+}
+
+
+/*  стилизация кнопок
+------------------------------------------------------------------------------*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 33px;
+    border: none;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+
+    color: #fff;
+    background: #000;
+}
+
+.btn:hover,
+.btn:active {
+    color: #fff;
+    background: #663d15;
+}
+
+.btn:disabled {
+    cursor: default;
+    opacity: .5;
+}
+
+.btn:disabled:hover {
+    background: #000;
+}
+
+
+/*  стилизация шапки страниц
+------------------------------------------------------------------------------*/
+.main-header {
+    color: #fff;
+    background: #000;
+}
+
+
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-navigation a {
+    position: relative;
+
+    display: block;
+    padding: 26px 21px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.main-navigation a:hover {
+    background: #242424;
+}
+.main-navigation a.active:hover {
+    background: none;
+}
+
+.main-navigation a.active::after {
+    content: "";
+
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    bottom: 0;
+
+    height: 4px;
+
+    background: #fff;
+}
+
+
+.user-block {
+    font-size: 0;
+    text-align: right;
+}
+
+.user-block .login {
+    position: relative;
+
+    display: inline-block;
+    vertical-align: top;
+    padding: 26px 21px;
+    padding-left: 52px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+.user-block .login:hover {
+    background: #242424;
+}
+
+.user-block .login::before {
+    content: "";
+
+    position: absolute;
+    left: 21px;
+    top: 27px;
+
+    width: 18px;
+    height: 18px;
+
+    background: transparent url("../img/icon-login.png") no-repeat;
+    background-position: 0 0;
+
+    opacity: .3;
+}
+.user-block .login:hover::before {
+    opacity: 1;
+}
+
+
+/*  стилизация подвала страниц
+------------------------------------------------------------------------------*/
+.main-footer {
+    color: #fff;
+    background: #252525 url("../img/bg-main-footer.png");
+}
+
+body.inner-page .main-footer {
+    box-shadow: inset 0 40px 40px -20px rgba(0,0,0,.9);
+}
+
+
+.main-footer p {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.footer-contacts a {
+    color: #fff;
+}
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+
+.social-btn {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 43px;
+    height: 43px;
+
+    margin: 0 2px;
+
+    font-size: 0;
+
+    text-decoration: none;
+
+    background: #000 url("../img/sprite-social-icons.png") no-repeat;
+
+    transition: all .3s ease;
+}
+.social-btn:hover { background-color: #fff; }
+
+.social-btn-fb   { background-position: 0 -43px; }
+.social-btn-inst { background-position: 0 -129px; }
+.social-btn-vk   { background-position: 0 -215px; }
+
+.social-btn-fb:hover   { background-position: 0 0; }
+.social-btn-inst:hover { background-position: 0 -86px; }
+.social-btn-vk:hover   { background-position: 0 -172px; }
+
+
+.footer-copyright .btn{
+    padding: 10px 20px;
+}
+.footer-copyright .btn:hover {
+    color: #000;
+    background: #fff;
+}
+
+
+/*  стилизация блока преимуществ
+------------------------------------------------------------------------------*/
+.features-row {
+    color: #f7f4f1;
+}
+
+.features-item {
+    text-align: center;
+}
+
+.features-title {
+    position: relative;
+
+    padding-bottom: 42px;
+    margin-bottom: 28px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-title::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background: #f7f4f1;
+
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+}
+
+.features-item p {
+    margin: 10px;
+}
+
+
+/*  стилизация двухколоночных блоков для главной страницы
+------------------------------------------------------------------------------*/
+.index-content {
+    padding-left: 82px;
+    padding-right: 78px;
+    padding-top: 44px;
+    padding-bottom: 52px;
+
+    color: #000;
+    background:
+        url("../img/bg-column-separator.png") no-repeat center,
+        #f8f5f2 url("../img/bg-index-pattern.png");
+}
+
+.content-column-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+
+/*  стилизация блока новостей
+------------------------------------------------------------------------------*/
+.news-preview {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-preview li {
+    margin-bottom: 25px;
+}
+
+.news-preview time {
+    text-transform: none;
+}
+
+
+/*  стилизация галереи-слайдера
+------------------------------------------------------------------------------*/
+.gallery {
+    position: relative;
+    height: 260px;
+    margin-top: 30px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    border: 7px solid #fff;
+    background: #ccc;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+}
+.gallery-prev { left: 0; }
+.gallery-next { right: 0; }
+
+
+/*  стилизация блока контактных данных
+------------------------------------------------------------------------------*/
+.main-contacts .btn {
+    margin-top: 20px;
+    margin-right: 16px;
+    padding: 10px 30px;
+}
+
+
+/*  стилизация блока формы бронирования
+------------------------------------------------------------------------------*/
+.appointment-form input {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+    width: 140px;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+/*  стилизация блока навигации "хлебные крошки"
+------------------------------------------------------------------------------*/
+/*
+    <header class="content-header">
+        <h1>Набор для путешествий «Baxter of California»</h1>
+        <nav class="breadcrumbs">
+            <a class="breadcrumbs-item" href="#">Главная</a>
+            <a class="breadcrumbs-item" href="#">Магазин</a>
+            <a class="breadcrumbs-item" href="#">Средства для ухода</a>
+            <span class="breadcrumbs-item">Набор для путешествий «Baxter of California»</span>
+        </nav><!-- breadcrumbs -->
+    </header><!-- content-header -->
+*/
+
+.content-header {
+    margin-bottom: 44px;
+}
+
+.content-header h1 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.breadcrumbs-item {
+    display: inline-block;
+    vertical-align: top;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+a.breadcrumbs-item {
+    position: relative;
+    margin-right: 36px;
+}
+a.breadcrumbs-item:hover {
+    color: #663d15;
+}
+
+a.breadcrumbs-item::after {
+    content: "";
+
+    position: absolute;
+    right: -20px;
+    top: 10px;
+
+    border: 4px solid #000;
+
+    transform-origin: right bottom;
+    transform: rotate(45deg);
+}
+
+span.breadcrumbs-item {
+    opacity: 0.3;
+}
+
+
+/*  стилизация блока выбора товара для покупки
+------------------------------------------------------------------------------*/
+/*
+    <div class="item-action" >
+        <span class="item-price">2 900 РУБ.</span>
+        <button class="btn btn-to-cart">Купить</button>
+    </div>
+*/
+
+.item-action {
+    font-size: 0;
+}
+
+.item-price {
+    display: inline-block;
+    vertical-align: top;
+
+    padding: 10px 26px;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #000;
+    background: #e5e5e5;
+}
+
+.btn-to-cart {
+    padding: 10px 20px;
+}
+
+
+/*  стилизация блока фильтров каталога товаров
+------------------------------------------------------------------------------*/
+.filter-title {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.filters-form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    margin-bottom: 43px;
+}
+
+.filters-form li {
+    margin-bottom: 13px;
+}
+
+.filters-form .btn {
+    margin-top: 8px;
+    padding: 10px 30px;
+}
+
+
+/*  стилизация каталога товаров
+------------------------------------------------------------------------------*/
+.catalog-items {
+    margin-top: 13px;
+    margin-bottom: 25px;
+    font-size: 0;
+}
+
+
+/*  стилизация товарной карточки
+------------------------------------------------------------------------------*/
+.catalog-item {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    box-shadow: 0 0 15px 0 rgba(0,0,0, .2);
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.catalog-item img {
+    width: 220px;
+    height: 165px;
+}
+
+
+.item-footer {
+    padding: 5px 15px;
+    padding-bottom: 15px;
+}
+
+.item-title {
+    margin: 0;
+    margin-bottom: 13px;
+}
+
+.item-title a {
+    display: block;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    text-transform: none;
+    text-decoration: none;
+
+    color: #000;
+}
+
+.item-title span {
+    display: block;
+    text-transform: uppercase;
+}
+
+.catalog-item .item-price {
+    width: 100px;
+    padding: 10px 4px;
+    text-align: center;
+}
+
+
+/*  стилизация блока переключения страниц
+------------------------------------------------------------------------------*/
+.catalog-paginator .btn {
+    padding: 10px 20px;
+}
+
+.catalog-paginator span.btn,
+.catalog-paginator span.btn:hover {
+    cursor: default;
+    color: #000;
+    background: #fff;
+}
+
+
+/*  стилизация блока галереи товара
+------------------------------------------------------------------------------*/
+.item-gallery {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.main-photo {
+    display: block;
+}
+
+.main-photo img {
+    width: 460px;
+    height: 498px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0, .2);
+}
+
+.gallery-navigation {
+    margin-top: 15px;
+}
+
+.gallery-navigation a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 18px;
+}
+
+.gallery-navigation img {
+    width: 140px;
+    height: 149px;
+    box-shadow: 5px 5px 25px 0 rgba(0,0,0, .2);
+}
+
+
+/*  стилизация блока описания товара
+------------------------------------------------------------------------------*/
+.description-header {
+    margin-bottom: 30px;
+}
+
+.item-sku {
+    float: right;
+    color: #aeaeae;
+}
+
+.description-text {
+    margin-bottom: 35px;
+}
+
+.item-components {
+    margin-top: 60px;
+}
+
+.components-title {
+    margin: 0;
+    margin-bottom: 26px;
+
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+/*  стилизация блока слогана
+------------------------------------------------------------------------------*/
+.promo-title {
+    position: relative;
+
+    margin-bottom: 60px;
+
+    font-size: 48px;
+    line-height: 52px;
+
+    text-align: center;
+}
+
+.promo-title span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 27px;
+
+    font-size: 48px;
+    line-height: 52px;
+
+    text-transform: uppercase;
+    background: #f8f5f2 url("../img/bg-index-pattern.png");
+}
+
+.promo-title::after {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    left:0;
+    right: 0;
+    top: 50%;
+    margin-top: -1px;
+
+    border: 1px solid #000;
+}
+
+
+/*  стилизация контентных блоков для страницы прайса
+------------------------------------------------------------------------------*/
+.content-title {
+    margin: 0;
+    margin-bottom: 26px;
+
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.column-left .content-title {
+    padding-right: 40%;
+}
+.column-right .content-title {
+    padding-right: 60%;
+}
+
+
+/*  стилизация таблицы прайса
+------------------------------------------------------------------------------*/
+.price-table {
+    width: 100%;
+    margin-top: 34px;
+}
+
+.price-table td {
+    width: 50%;
+}
+
+.price-table td:nth-child(2n) {
+    text-align: center;
+}
+
+
+/*  стилизация всплывающих блоков
+------------------------------------------------------------------------------*/
+.popup {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+
+    box-shadow: 0 30px 50px 0 rgba(0,0,0,.75);
+}
+
+.popup .btn-popup-close {
+    position: absolute;
+    top: 8px;
+    right: -35px;
+
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    font-size: 0;
+
+    background: transparent url("../img/icon-close.png") no-repeat 0 0;
+
+    transition: transform .2s ease;
+}
+
+.popup .btn-popup-close:hover {
+    transform: rotate(180deg);
+}
+
+.popup .btn-popup-close:active {
+    transform: rotate(360deg);
+}
+
+
+/*  стилизация формы входа
+------------------------------------------------------------------------------*/
+.popup-login {
+    width: 460px;
+    margin-left: -230px;
+
+    color: #000;
+    background: #f8f5f2 url("../img/bg-index-pattern.png") repeat 0 0;
+}
+
+.popup-login form {
+    width: 300px;
+    margin: 50px auto;
+    margin-bottom: 62px;
+}
+
+.popup-login h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.popup-login p {
+    margin-bottom: 28px;
+}
+
+.popup-login .login-input {
+    position: relative;
+
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    margin-bottom: 8px;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 15px 17px;
+    background-position: 95% 50%;
+
+}
+.popup-login .login-input-user { background-image: url("../img/icon-user.png"); }
+.popup-login .login-input-pass { background-image: url("../img/icon-lock.png"); }
+
+.popup-login .login-options {
+    margin: 13px 0;
+}
+
+.popup-login .login-label {
+    padding: 0 32px;
+}
+
+.popup-login a {
+    float: right;
+
+    line-height: 20px;
+    text-decoration: none;
+
+    color: #000;
+    box-shadow:
+        0 1px 0 0 rgba(0,0,0,.2),
+        0 2px 0 0 rgba(0,0,0,.2);
+}
+
+.popup-login a:hover {
+    color: #663d15;
+}
+
+.popup-login a:active {
+    box-shadow: none;
+}
+
+.popup-login .btn {
+    width: 100%;
+}
+
+
+/*  стилизация блока карты
+------------------------------------------------------------------------------*/
+.popup-map {
+    width: 780px;
+    height: 574px;
+
+    margin: 0;
+    margin-left: -390px;
+    padding: 0;
+
+    color: #000;
+    background: #fff;
+}
+
+.popup-map img {
+    display: block;
+    width: 766px;
+    height: 560px;
+
+    margin: 7px;
+}

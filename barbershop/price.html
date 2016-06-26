@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Прайс-лист - Барбершоп «Бородинский»</title>
+    <!-- <base href="/barbershop/"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page price-page">
+    <header class="main-header">
+        <div class="container clearfix">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a class="active" href="price.html">Прайс-лист</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav><!-- header-navigation -->
+
+            <div class="user-block">
+                <a class="login" href="#" onclick="event.preventDefault();document.getElementById('login-form').classList.toggle('hidden');">Вход</a>
+            </div><!-- user-block -->
+        </div><!-- container -->
+    </header><!-- main-header -->
+
+
+    <div class="container main-container">
+        <header class="content-header">
+            <h1>Прайс-лист</h1>
+
+            <nav class="breadcrumbs">
+                <a class="breadcrumbs-item" href="index.html">Главная</a>
+                <span class="breadcrumbs-item">Прайс-лист</span>
+            </nav><!-- breadcrumbs -->
+        </header><!-- content-header -->
+
+        <div class="promo-title">
+            <span>Истинно мужская классика</span>
+        </div>
+
+        <div class="container-row clearfix">
+            <div class="column-left">
+                <h2 class="content-title">Мы используем только лучшие средства:</h2>
+
+                <ul class="list list-big">
+                    <li>
+                        Baxter of California
+                    </li>
+                    <li>
+                        Mr Natty
+                    </li>
+                    <li>
+                        Suavecito
+                    </li>
+                    <li>
+                        Malin+Goetz
+                    </li>
+                </ul>
+            </div><!-- column-left -->
+
+            <div class="column-right">
+                <h2 class="content-title">Цены на услуги наших мастеров:</h2>
+
+                <table class="price-table">
+                    <tr>
+                        <td>Стрижка</td>
+                        <td>1500 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Стрижка бороды</td>
+                        <td>500 р.</td>
+                    </tr>
+                    <tr>
+                        <td>Накрутка усов</td>
+                        <td>350 р.</td>
+                    </tr>
+                </table>
+            </div><!-- column-right -->
+        </div><!-- container-row -->
+
+        <h2 class="content-title">
+            Несколько слов о нас:
+        </h2>
+
+        <div class="container-row clearfix">
+            <div class="column-left">
+                Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+            </div><!-- column-left -->
+
+            <div class="column-left">
+                Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+            </div><!-- column-right -->
+        </div><!-- container-row -->
+    </div><!-- container -->
+
+
+    <footer class="main-footer">
+        <div class="container clearfix">
+            <div class="footer-contacts">
+                Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                <a href="#">Как нас найти?</a><br>
+                телефон: +7 (495) 666-02-66
+            </div><!-- footer-contacts -->
+
+            <div class="footer-social">
+                <p>Давайте дружить!</p>
+                <a class="social-btn social-btn-vk" href="#">Vk</a>
+                <a class="social-btn social-btn-fb" href="#">Fb</a>
+                <a class="social-btn social-btn-inst" href="#">Inst</a>
+            </div><!-- footer-social -->
+
+            <div class="footer-copyright">
+                <p>Разработано:</p>
+                <a href="#" class="btn">htmlacademy.ru</a>
+            </div><!-- footer-copyright -->
+        </div><!-- container -->
+    </footer><!-- main-footer -->
+
+
+    <section class="popup popup-login hidden" id="login-form">
+        <form action="/login" method="post">
+            <h2>Личный кабинет</h2>
+
+            <p>
+                Введите пожалуйста свой логин и пароль<br>
+                Если вы забыли пароль
+            </p>
+
+            <input class="login-input login-input-user" type="text" name="login" placeholder="Логин">
+            <input class="login-input login-input-pass" type="password" name="password" placeholder="Пароль">
+
+            <div class="login-options clearfix">
+                <input class="control control-check" id="remember" type="checkbox" name="remember" checked>
+                <label class="login-label" for="remember">Запомните меня</label>
+
+                <a href="#">Я забыл пароль!</a>
+            </div>
+
+            <button class="btn" type="submit">Войти</button>
+        </form>
+
+        <button class="btn-popup-close" onclick="document.getElementById('login-form').classList.toggle('hidden');">Закрыть</button>
+    </section><!-- login-form -->
+</body>
+</html>
