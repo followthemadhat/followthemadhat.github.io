@@ -132,6 +132,11 @@
   .dapps {
     justify-content: space-around;
   }
+  .slide.slide--one .tagline {
+    margin: 0 auto;
+    width: 100%;
+    left: 0;
+  }
 }
 
 @media (max-width: 640px) {
