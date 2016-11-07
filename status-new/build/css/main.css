@@ -1129,7 +1129,9 @@ div#mce-responses {
   .point {
     z-index: 999; }
   .slide__header--inversed {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .slide.slide--one .phones {
+    width: 100%; } }
 
 @media (max-width: 439px) {
   .slide__header {

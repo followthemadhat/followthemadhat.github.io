@@ -181,6 +181,10 @@
   .slide__header--inversed {
     margin-bottom: 50px;
   }
+
+  .slide.slide--one .phones {
+    width: 100%; // Set phones width to 100% for 100% mobile UX
+  }
 }
 
 @media (max-width: 439px) {
