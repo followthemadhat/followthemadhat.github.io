@@ -1,0 +1,123 @@
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 900;
+  top: 40px;
+  left: 0;
+}
+
+.header__inner {
+  width: 1012px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+}
+
+a.logo {
+  display: flex;
+  width: 260px;
+  flex-wrap: nowrap; //default
+  justify-content: flex-start; //default
+  align-items: flex-start;
+}
+
+.logo__icon {
+  height: 78px;
+  width: 78px;
+  background-image: url(../assets/logo.png);
+  background-size: 78px;
+}
+
+.logo_text {
+  margin: 7px 0 0 5px;
+}
+
+.logo__title {
+  display: block;
+  font-family:PostGrotesk-Medium;
+  font-size: 22px;
+  line-height: 25px;
+  color: $colorWhite;
+}
+
+.logo__description {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+  color: $colorWhite;
+  opacity: .5
+}
+
+.nav a {
+  font-family:PostGrotesk-Medium;
+  color: $colorWhite;
+  font-size: 15px;
+  display: flex;
+  padding: 10px 15px 15px;
+  
+}
+
+.nav a:hover {
+  opacity: .7;
+}
+
+.shares {
+  width: 260px;
+  height: 50px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center
+}
+
+.shares .social-links {
+  justify-content:flex-end;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.shares .social-links li {
+  margin: 0 0 0 10px;
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3F4A97;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  transition: transform .2s ease;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px 0px rgba(80,92,174,0.50);
+}
+
+.social-link.social-link--fb {
+  background-color: #4675DF;
+  background-image: url(../assets/icon_fb.svg);
+}
+
+.social-link.social-link--tw {
+  background-color: #4DB9FE;
+  background-image: url(../assets/icon_tw.svg);
+}
+
+.social-link.social-link--sl {
+  background-color: #E3306D;
+  background-image: url(../assets/icon_sl.svg);
+}
+
+.social-link:hover {
+  transform: scale(.9)
+}

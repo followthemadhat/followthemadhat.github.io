@@ -1,0 +1,249 @@
+@media (max-width: 1239px) {
+  body {
+    overflow-x: hidden; // To avoid horizontal scroll with current fixed width slides; alternate: make them 100% width;
+  }
+  .slide.slide--one.slide--one-centered .slide__inner {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+  .slide.slide--one.slide--one-centered .slide__bg {
+    width: 100%;
+    border-radius: 0;
+  }
+  .features-wrap {
+    width: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 1180px) {
+  .slide.slide--three .slide__inner, .points, .circles {
+    width: 100%;
+  }
+  .points {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-end;
+  }
+  .point {
+    position: static;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .slide__circles {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
+  a.logo {
+    order: 2;
+  }
+
+  .nav {
+    order: 1;
+  }
+
+  .shares {
+    order: 3;
+  }
+
+  .slide.slide--one .slide__bg {
+    width: 100%;
+  }
+
+  .slide.slide--one .slide__inner{
+    height: 1000px;
+  }
+
+  .slide.slide--one .slide__bg {
+    height: 1000px;
+  }
+
+  .slide.slide--one .phones  {
+    width: 610px;
+    height: 800px;
+    left: 50%;
+    top: inherit;
+    bottom: -220px;
+    margin: 0 0 0 -305px;
+  }
+
+  .slide.slide--one .tagline {
+    width: 580px;
+    left: 50%;
+    top: 145px;
+    margin: 0 0 0 -290px;
+  }
+
+  .tagline__title {
+    font-size: 25px;
+    line-height: 38px;
+    width: 410px;
+  }
+
+  .features {
+    padding: 20px;
+  }
+
+  .features__item {
+    width: 30%;
+  }
+  .phones-animate-top {
+    transition: 1s ease !important;
+    bottom: -100px !important;
+  }
+}
+
+@media (max-width: 860px) {
+  .dapps {
+    width: 100%;
+  }
+  .dapp {
+    margin: 10px;
+  }
+  .point {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+}
+
+@media (max-width: 845px) {
+  .shares {
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav, .shares {
+    display: none;
+  }
+  .header__inner {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .dapps {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 640px) {
+  .features-wrap {
+    height: auto;
+    bottom: -460px;
+  }
+  .features {
+    flex-direction: column;
+  }
+  .features__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .more-button {
+    display: block;
+    position: relative;
+    margin-top: 40px;
+  }
+  .slide.slide--two {
+    padding: 370px 0 40px;
+  }
+}
+
+@media (max-width: 618px) {
+  .slide__circles {
+    height: auto;  
+  }
+  .slide.slide--three .slide__inner {
+    height: auto;
+  }
+  .points {
+    position: static;
+    height: auto;
+  }
+  .circles {
+    height: 100%;
+  }
+  .point {
+    z-index: 999;
+  }
+  .slide__header--inversed {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 439px) {
+  .slide__header {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .slide__title {
+    font-size: 22px;
+  }
+  .slide__description {
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .tagline .tagline__title {
+    font-size: 20px;
+    width: 330px;
+  }
+  .tagline .tagline__body {
+    font-size: 16px;
+    width: 325px;
+  }
+  .mc-field-group, .clear {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+  }
+  .mc_embed_signup {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  #mce-responses {
+    width: 320px;
+    text-align: center;
+  }
+  .slide.slide--one .phones {
+    bottom: -280px;
+  }
+  #mc-embedded-subscribe-form input[type="email"] {
+    margin: 0 auto;
+  }
+  .slide__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .tagline .tagline__title {
+    font-size: 18px;
+  }
+  .tagline .tagline__body {
+    font-size: 14px;
+    width: 283px;
+  }
+  .slide__title {
+    font-size: 18px;
+  }
+  .slide__description {
+    font-size: 14px;
+    width: 280px;
+    margin: 0 auto;
+  }
+  .slide__header {
+    padding: 0 10px;
+  }
+}

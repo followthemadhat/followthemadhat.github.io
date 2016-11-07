@@ -1,0 +1,47 @@
+// Mailchimp styles
+
+.mc-field-group {
+  display: inline-block;
+}
+
+div.mce_inline_error {
+  // position: absolute;
+  width: 100%;
+  color: #fff;
+  opacity: .6;
+  margin-top: 10px;
+}
+
+div#mce-responses {
+  color: #fff;
+  opacity: .6;
+  margin-top: 10px;
+  a {
+    color: #fff;
+    opacity: .6;
+    text-decoration: underline;
+  }
+}
+
+.clear {
+  display: inline-block;
+}
+
+#mc-embedded-subscribe-form {
+  input {
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 175px;
+  }
+  input[type=email] {
+    margin: 0 10px 0 0;
+  }
+}
+
+.footer-icons-social {
+  margin-top: 20px;
+  iframe {
+    margin: 0 10px;
+  }
+}
