@@ -102,6 +102,7 @@
 @media (max-width: 860px) {
   .dapps {
     width: 100%;
+    padding: 0 10px;
   }
   .dapp {
     margin: 10px;
@@ -128,7 +129,7 @@
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 679px) {
   .dapps {
     justify-content: space-around;
   }
@@ -254,5 +255,14 @@
   }
   .slide__header {
     padding: 0 10px;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 460px) {
+  .dapp, .dapp__inner {
+    width: 165px;
+  }
+  .dapp {
+    margin: 0 5px 20px 5px;
   }
 }
