@@ -36,11 +36,15 @@ div#mce-responses {
   }
   input[type=email] {
     margin: 0 10px 0 0;
+    font-size: 14px;
   }
 }
 
-.footer-icons-social {
-  margin-top: 20px;
+.tagline-social-share {
+  opacity: 0;
+  transition: 1s all ease;
+  display: block;
+  width: 310px;
   iframe {
     margin: 0 10px;
   }

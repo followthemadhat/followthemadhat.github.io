@@ -6,7 +6,7 @@
 }
 
 .slide.slide--two {
-  padding: 100px 0 40px;
+  padding: 120px 0 40px;
 }
 
 .slide.slide--three {
@@ -768,8 +768,13 @@
 
 .slide--shown .dapp__icon {
   transform: scale(1);
-  opacity:1
+  opacity:1;
+  transition-delay: 0s;
 
+}
+
+.slide--shown .dapp__icon:hover {
+  transform: scale(0.9);
 }
 
 .dapp--plus .dapp__description {

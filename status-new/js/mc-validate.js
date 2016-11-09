@@ -247,16 +247,20 @@
             $('.slide--four').empty();
             setTimeout(function(){
               $('h2.tagline__title').text('Welcome! Please confirm your email').css('opacity', 1);
-            },500);
-            setTimeout(function(){
-              $('h2.tagline__title').html('Welcome! Please confirm your email');
-              $('.tagline__body').html('Important: We just sent you a confirmation link').css('opacity', .6);
-              $('.tagline__body').append('<div class="footer-icons-social"><a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false" data-text="Check out Status (@ethstatus) - an open source project that will bring Ethereum to Android and iOS!" data-size="large">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><a href="https://twitter.com/ethstatus" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @ethstatus</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>');
+              $('.tagline__form').hide();
               $('.phones').addClass('phones-animate-top');
             },500);
-		        // $('#mc-embedded-subscribe-form').each(function(){
-		        //     this.reset();
-		    	// });
+            setTimeout(function(){
+              $('.tagline__body').html('Important: We just sent you a confirmation link').css('opacity', .6);
+              $('.tagline').append('<div class="tagline-social-share"><a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false" data-text="Check out Status (@ethstatus) - an open source project that will bring Ethereum to Android and iOS!" data-size="large">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><a href="https://twitter.com/ethstatus" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @ethstatus</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>');
+            },1000);
+            setTimeout(function(){
+              $('.tagline-social-share').css('opacity', 1);
+            },2000);
+            // $('#mc-embedded-subscribe-form').each(function(){
+            //   this.reset();
+            // });
+            ga('send', 'event', 'Waitlist', 'Sign Up', 'Waitlist');
 
 		    // If the form has errors, display them, inline if possible, or appended to #mce-error-response
 		    } else {
@@ -374,6 +378,22 @@
       $('.mc-field-group input').focus();
     },1000);
   });
+
+    // Smooth scroll to ID
+
+    $(".nav__item--features").click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: ($("#features-wrap").offset().top - 100)
+      }, 1000);
+    });
+
+    $(".nav__item--discover").click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#discover").offset().top
+      }, 1000);
+    });
 
 }(jQuery));
 
